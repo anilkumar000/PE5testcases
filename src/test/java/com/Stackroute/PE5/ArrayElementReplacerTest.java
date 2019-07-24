@@ -22,7 +22,7 @@ public class ArrayElementReplacerTest {
 
     @Test
     public void givenArrayListShouldReturnReplacedList(){
-        Object[] expectedString = {"Kiwi","Grape","Mango","Berry"};
+        String[] expectedString = {"Kiwi","Grape","Mango","Berry"};
 
         String[] inputString={"Apple","Grape","Melon","Berry"};
         String[] toReplace={"Kiwi","Mango"};
@@ -32,7 +32,7 @@ public class ArrayElementReplacerTest {
 
     @Test
     public void givenArrayListWithUnEqualReplaceArraysShouldReturnReplacedList(){
-        Object[] expectedString = {"Kiwi","Grape","Melon","Berry"};
+        String[] expectedString = {"Kiwi","Grape","Melon","Berry"};
 
         String[] inputString={"Apple","Grape","Melon","Berry"};
         String[] toReplace={"Kiwi","Mango"};

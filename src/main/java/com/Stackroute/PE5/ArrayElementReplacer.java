@@ -5,17 +5,22 @@ import java.util.Collections;
 import java.util.List;
 
 public class ArrayElementReplacer {
-    public Object[] replacingElement(String[] inputString, String[] toReplace, String[] toBeReplaced){
+    public String[] replacingElement(String[] inputString, String[] toReplace, String[] toBeReplaced){
         List<String> list=new ArrayList<>();
+//        Adding Elements in List from InputString Array
         for (String s:inputString) {
             list.add(s);
         }
+
+//        Replace elements in list with desired elements Using Collections method
         for (int i=0;i<toBeReplaced.length;i++)
             Collections.replaceAll(list,toBeReplaced[i],toReplace[i]);
-        Object[] object=list.toArray();
+
+//        Assigning Repalced List to String Array
+        String[] ouptutString= list.toArray(new String[list.size()]);
 
 
-        return object;
+        return ouptutString;
 
     }
 }
