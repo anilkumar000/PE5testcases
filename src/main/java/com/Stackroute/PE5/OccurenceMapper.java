@@ -8,6 +8,8 @@ import java.util.regex.Pattern;
 
 public class OccurenceMapper {
     public Map<String,Integer> findingAndMappingOccurencesOfString(String inputString){
+
+//        Checking if given String is empty or null
     if (inputString==null || inputString=="" || inputString.isBlank())
         throw new NullPointerException("Empty or Blank string given.");
 //        Creating a Map<String,Integer> for storing ouptut
