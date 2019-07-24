@@ -2,18 +2,19 @@ package com.Stackroute.PE5;
 
 public class Student {
 
-
+//  Private variables of a Student
     private int studentId;
     private String studentName;
     private int age;
 
+//     Custom Constructor for declaring variables
     public Student(int studentId, String studentName, int age) {
         this.studentId = studentId;
         this.studentName = studentName;
         this.age = age;
     }
 
-
+// **Getter and Setter Methods for assigning and retrieving Private Variables**
     public int getStudentId() {
         return studentId;
     }
